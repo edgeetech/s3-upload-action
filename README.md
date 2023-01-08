@@ -49,7 +49,7 @@ jobs:
           description: 'Preview my app'
           environment: preview
 
-      - uses: shallwefootball/s3-upload-action@master
+      - uses: edgeetech/s3-upload-action@master
         name: Upload S3
         id: S3
         with:
