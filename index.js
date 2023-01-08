@@ -37,12 +37,11 @@ function upload(params) {
       if (err) {
         core.error(err);
         reject(err)
-        return
-      }
-
-      core.info(`uploaded - ${data.Key}`);
-      core.info(`located - ${data.Location}`);
-      resolve(data.Location);
+        return;
+      
+      core.info(`uploaded - ${data?.Key ?? 'Could not upload files'}`);
+      core.info(`located - ${data?.Location ?? 'Could not upload files'}`);
+      resolve(data?.Location ?? 'Upload Error');
     });
   });
 }
