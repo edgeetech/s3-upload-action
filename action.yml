@@ -1,6 +1,6 @@
-name: Upload S3
-description: 'Upload directory to S3'
-author: 'Dong Keon Kim'
+name: AWS S3 Uploader
+description: 'Upload directory/files to AWS S3'
+author: 'Ahmet Selcuk OZYURT (asozyurt@edgee.tech)'
 branding:
   icon: 'upload-cloud'
   color: 'orange'
@@ -30,5 +30,5 @@ outputs:
   object_locations:
     description: 'object locations'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'

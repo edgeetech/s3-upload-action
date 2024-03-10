@@ -1,25 +1,25 @@
 {
-  "name": "upload-s3-action",
-  "description": "Upload directory to AWS S3",
+  "name": "s3-upload-action",
+  "description": "Upload directory/files to AWS S3",
   "version": "1.3.3",
   "main": "index.js",
   "license": "MIT",
   "repository": "https://github.com/shallwefootball/upload-s3-action",
-  "author": "Dong Keon Kim <amos@shallwefootball.com>",
+  "author": "Ahmet Selcuk OZYURT (asozyurt@edgee.tech)",
   "scripts": {
     "package": "ncc build index.js -o dist"
   },
   "dependencies": {
-    "@actions/core": "^1.10.0",
-    "aws-sdk": "^2.1242.0",
+    "@actions/core": "^1.10.1",
+    "aws-sdk": "^2.1574.0",
     "klaw-sync": "^6.0.0",
     "mime-types": "^2.1.35",
     "shortid": "^2.2.16",
-    "slash": "^5.0.0"
+    "slash": "^5.1.0"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.34.0",
-    "prettier": "^2.7.1"
+    "@vercel/ncc": "^0.38.1",
+    "prettier": "^3.2.5"
   },
   "prettier": {
     "singleQuote": true

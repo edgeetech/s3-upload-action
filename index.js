@@ -45,8 +45,8 @@ function upload(params) {
   return new Promise((resolve) => {
     s3.upload(params, (err, data) => {
       if (err) core.error(err);
-      core.info(`uploaded - ${data.Key}`);
-      core.info(`located - ${data.Location}`);
+      core.info(`uploaded - ${data?.Key ?? 'empty key'}`);
+      core.info(`located - ${data?.Location ?? 'empty location'}`);
       resolve(data.Location);
     });
   });
